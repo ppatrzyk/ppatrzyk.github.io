@@ -18,6 +18,10 @@ hr {
 	border-top: 1px solid #e6e3ed;
 }
 
+img {
+  width: 100%;
+}
+
 .btn-dark {
 	background-color: #141414;
 }
