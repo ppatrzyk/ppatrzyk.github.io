@@ -11,7 +11,12 @@ body {
 }
 
 a {
-	color: #7b6d8d;
+	color: #808080;
+}
+
+a:hover {
+  color: #404040;
+  text-decoration: none !important;
 }
 
 hr {
@@ -29,6 +34,7 @@ img {
 .navbar {
 	padding-left: 40px;
 	padding-right: 40px;
+  margin-bottom: 60px;
 }
 
 .vertical-center {
@@ -36,7 +42,7 @@ img {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  margin-top: 60px; /*fix to prevent content under navbar*/
+  /*margin-top: 60px; fix to prevent content under navbar*/
 }
 
 .apa {
