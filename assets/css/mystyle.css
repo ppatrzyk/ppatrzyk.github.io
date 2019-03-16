@@ -10,6 +10,10 @@ body {
   background-color: #070707;
 }
 
+.navfix {
+  margin-top: 60px;
+}
+
 a {
 	color: #808080;
 }
@@ -42,7 +46,6 @@ img {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  /*margin-top: 60px; fix to prevent content under navbar*/
 }
 
 .apa {
