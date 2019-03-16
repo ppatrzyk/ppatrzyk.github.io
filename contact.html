@@ -1,76 +1,48 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+permalink: /contact
+---
 
-<head>
-	<title>Piotr Patrzyk | Home</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Import libraries -->
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-4.1.2.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/fontawesome-free-5.1.0/css/all.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/academicons-1.8.6/css/academicons.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
-	<script src="assets/js/jquery-3.3.1.min.js"></script>
-	<script src="assets/js/popper-1.14.3.min.js"></script>
-	<script src="assets/js/bootstrap-4.1.2.min.js"></script>
-	<script>
-		$(function(){
-			$("#nav-placeholder").load("navbar.html");
-		});
-	</script>
-</head>
+<div class="row">
+	<div class="col-md-6 offset-md-3">
 
-<body>
+		<!-- https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server -->
+		<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzi_1IxqJmzphEhprAzWGamR47pchM_npsYF2DS/exec">
 
-	<div id="nav-placeholder"></div>
-	<div class="vertical-center">
-		<div class="container-fluid">
-		  <div class="row">
-		    <div class="col-md-6 offset-md-3">
+			<div>
+				<h2>Contact me:</h2>
+			</div>
 
-		      <!-- https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server -->
-		      <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzi_1IxqJmzphEhprAzWGamR47pchM_npsYF2DS/exec">
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input id="name" name="name" class="form-control" placeholder="Your name" />
+			</div>
 
-		        <div>
-		          <h2>Contact me:</h2>
-		        </div>
+			<div class="form-group">
+				<label for="email">Your Email Address:</label>
+				<input id="email" name="email" type="email" class="form-control" value="" required placeholder="your.name@email.com"/>
+				<span id="email-invalid" style="display:none">
+					Must be a valid email address</span>
+			</div>
 
-		        <div class="form-group">
-		          <label for="name">Name:</label>
-		          <input id="name" name="name" class="form-control" placeholder="Your name" />
-		        </div>
+			<div class="form-group">
+				<label for="message">Message:</label>
+				<textarea class="form-control" id="message" name="message" rows="10"
+				placeholder="Enter your message"></textarea>
+			</div>
 
-		        <div class="form-group">
-		          <label for="email">Your Email Address:</label>
-		          <input id="email" name="email" type="email" class="form-control" value="" required placeholder="your.name@email.com"/>
-		          <span id="email-invalid" style="display:none">
-		            Must be a valid email address</span>
-		        </div>
+			<button type="submit" class="btn btn-dark">
+				Send <!-- <i class="far fa-envelope"></i> -->
+			</button>
 
-		        <div class="form-group">
-		          <label for="message">Message:</label>
-		          <textarea class="form-control" id="message" name="message" rows="10"
-		          placeholder="Enter your message"></textarea>
-		        </div>
+		</form>
 
-		        <button type="submit" class="btn btn-dark">
-		        	Send <!-- <i class="far fa-envelope"></i> -->
-		        </button>
-
-		      </form>
-
-		      <div style="display:none;" id="thankyou_message">
-		        <h2>Thanks for your message!</h2>
-		      </div>
-
-		    </div>
-		  </div>
+		<div style="display:none;" id="thankyou_message">
+			<h2>Thanks for your message!</h2>
 		</div>
+
 	</div>
+</div>
 
-  <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
-
-</body>
-</html>
+<!-- Submit the Form to Google Using "AJAX" -->
+<script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
