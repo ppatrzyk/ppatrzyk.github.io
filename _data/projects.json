@@ -4,5 +4,10 @@
         "applink": "http://fw.patrzyk.me/",
         "gitlink": "https://github.com/ppatrzyk/filmweb-explorer",
         "description": "Web application for exporting and visualizing movie ratings from <a target='_blank' rel='noopener noreferrer' href='https://www.filmweb.pl/'>Filmweb.pl</a>. Built with <i>Python/Flask</i>."
+    },
+    {
+        "name": "lastfmR",
+        "gitlink": "https://github.com/ppatrzyk/lastfmR",
+        "description": "R package wrapping <a target='_blank' rel='noopener noreferrer' href='https://www.last.fm/'>Last.fm</a> API."
     }
 ]

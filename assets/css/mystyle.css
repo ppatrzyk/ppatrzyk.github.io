@@ -56,5 +56,9 @@ img {
 }
 
 .project-entry {
-  margin-bottom: 2em;
+  margin-bottom: 24px;
+}
+
+.project-link {
+  margin-bottom: 8px;
 }
