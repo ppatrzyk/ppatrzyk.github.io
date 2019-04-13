@@ -6,7 +6,8 @@ html, body {
 
 body {
   font-family: 'Lato', sans-serif !important;
-  color: #e6e3ed;
+  /* color: #e6e3ed; */
+  color: #FAFAFA;
   background-color: #070707;
 }
 
@@ -21,6 +22,10 @@ a {
 a:hover {
   color: #404040;
   text-decoration: none !important;
+}
+
+h3 {
+  font-style: italic;
 }
 
 hr {
