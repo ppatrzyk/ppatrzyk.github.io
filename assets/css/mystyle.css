@@ -1,15 +1,21 @@
 html, body {
+  font-family: 'Lato', sans-serif !important;
   height:100%;
   margin:0;
   padding:0;
 }
 
-body {
-  font-family: 'Lato', sans-serif !important;
-  /* color: #e6e3ed; */
+.dark-theme {
   color: #FAFAFA;
   background-color: #070707;
 }
+
+.light-theme {
+  background-color: #FAFAFA;
+  color: #070707;
+}
+
+/* $('body').removeClass().addClass('light-theme'); */
 
 .navfix {
   margin-top: 60px;
