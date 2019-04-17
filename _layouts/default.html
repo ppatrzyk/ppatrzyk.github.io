@@ -4,6 +4,12 @@
 <head>
 	<title>{{ site.author }} | {{ page.title }} </title>
 	{% include head.html %}
+	{% if page.add_css %}
+		{{ page.add_css }}
+	{% endif %}
+	{% if page.add_js %}
+		{{ page.add_js }}
+	{% endif %}
 </head>
 
 <body class="dark-theme">
