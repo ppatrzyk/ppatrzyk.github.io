@@ -42,6 +42,12 @@ img {
   width: 100%;
 }
 
+.post-img {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .btn-dark {
 	background-color: #141414;
 }
