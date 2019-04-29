@@ -16,9 +16,12 @@
       <li class="nav-item">
         <a class="nav-link" href="/publications">Publications</a>
       </li>
+      {% assign psize = site.posts | size %}
+      {% if psize != 0 %}
       <li class="nav-item">
         <a class="nav-link" href="/blog">Blog</a>
       </li>
+      {% endif %}
     </ul>
 
     <!-- Right side of navbar -->
