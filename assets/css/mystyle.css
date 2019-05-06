@@ -79,3 +79,11 @@ img {
 .project-link {
   margin-bottom: 8px;
 }
+
+/* https://github.com/FortAwesome/Font-Awesome/issues/4363#issuecomment-356445786 */
+.fa-font:before {
+  font-family: roboto;
+  /* color: #429bf4; */
+  font-size: 1.2em;
+  content: "k";
+}
