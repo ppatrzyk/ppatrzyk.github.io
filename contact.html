@@ -7,8 +7,7 @@ title: Contact
 <div class="row">
 	<div class="col-md-6 offset-md-3">
 
-		<!-- https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server -->
-		<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzi_1IxqJmzphEhprAzWGamR47pchM_npsYF2DS/exec">
+		<form>
 
 			<div>
 				<h2>Contact me:</h2>
@@ -32,8 +31,8 @@ title: Contact
 				placeholder="Enter your message"></textarea>
 			</div>
 
-			<button type="submit" class="btn btn-dark">
-				Send <!-- <i class="far fa-envelope"></i> -->
+			<button onclick="console.log('click')" class="btn btn-dark">
+				Send
 			</button>
 
 		</form>
@@ -44,6 +43,3 @@ title: Contact
 
 	</div>
 </div>
-
-<!-- Submit the Form to Google Using "AJAX" -->
-<script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
