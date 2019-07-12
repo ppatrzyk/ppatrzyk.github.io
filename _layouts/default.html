@@ -7,12 +7,12 @@
 	{% if page.id %}
 		<link rel="stylesheet" type="text/css" href="/assets/css/highlight/atom-one-dark.css">
 		<script src="/assets/js/highlight.pack.js"></script>
-		{% if page.add_css %}
+	{% endif %}
+	{% if page.add_css %}
 		{{ page.add_css }}
-		{% endif %}
-		{% if page.add_js %}
+	{% endif %}
+	{% if page.add_js %}
 		{{ page.add_js }}
-		{% endif %}
 	{% endif %}
 </head>
 

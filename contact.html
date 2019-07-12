@@ -2,6 +2,7 @@
 layout: default
 permalink: /contact
 title: Contact
+add_js: '<script src="/assets/js/aws-sdk.min.js"></script><script src="/assets/js/contact-form.js"></script>'
 ---
 
 <div class="row">
@@ -31,7 +32,7 @@ title: Contact
 				placeholder="Enter your message"></textarea>
 			</div>
 
-			<button onclick="console.log('click')" class="btn btn-dark">
+			<button onclick="LPAWS.sendToTopic(); return false;" class="btn btn-dark">
 				Send
 			</button>
 
