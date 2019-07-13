@@ -8,7 +8,7 @@ add_js: '<script src="/assets/js/aws-sdk.min.js"></script><script src="/assets/j
 <div class="row">
 	<div class="col-md-6 offset-md-3">
 
-		<form>
+		<form id="contact_form">
 
 			<div>
 				<h2>Contact me:</h2>
@@ -17,8 +17,7 @@ add_js: '<script src="/assets/js/aws-sdk.min.js"></script><script src="/assets/j
 			<div class="form-group">
 				<label for="email">Your Email Address:</label>
 				<input id="email" name="email" type="email" class="form-control" value="" required placeholder="your.name@email.com"/>
-				<span id="email-invalid" style="display:none">
-					Must be a valid email address</span>
+				<span id="email-invalid" style="display:none">Invalid email</span>
 			</div>
 
 			<div class="form-group">
