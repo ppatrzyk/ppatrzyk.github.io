@@ -30,6 +30,10 @@ a:hover {
   text-decoration: none !important;
 }
 
+.error {
+  color: #a51414;
+}
+
 h3 {
   font-style: italic;
 }

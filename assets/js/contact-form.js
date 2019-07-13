@@ -21,7 +21,10 @@ function validEmail(email) {
     } else {
         invalidEmail.style.display = "none";
     }
-    if ( message.length < 15 || message.length > 10000 ) {
+    var message_length = message.length
+    if ( message_length < 15 || message_length > 10000 ) {
+        var len_error = `Incorrect lenght: ${message_length} characters, 15-10000 allowed`
+        invalidMessage.textContent = len_error;
         invalidMessage.style.display = "block";
         block = true;
     } else {
@@ -38,7 +41,7 @@ function validEmail(email) {
         Subject: mail_subject,
         TopicArn: 'arn:aws:sns:eu-west-1:410627534876:patrzyk-me-contact'
     };
-    
+
     var sns = new AWS.SNS();
     sns.publish(params, function(err, data) {
         if (err) {
