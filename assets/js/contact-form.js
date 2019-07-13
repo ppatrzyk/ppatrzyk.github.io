@@ -51,10 +51,8 @@ function validEmail(email) {
     var sns = new AWS.SNS();
     sns.publish(params, function(err, data) {
         if (err) {
-            console.log(err, err.stack);
             alert('Unknown error, sending failed');
         } else {
-            // console.log(data);
             document.getElementById("contact_form").style.display = "none";
             var thankYouMessage = document.getElementById("thankyou_message");
             thankYouMessage.style.display = "block";
