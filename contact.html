@@ -24,6 +24,7 @@ add_js: '<script src="/assets/js/aws-sdk.min.js"></script><script src="/assets/j
 				<label for="message">Message:</label>
 				<textarea class="form-control" id="message" name="message" rows="10"
 				placeholder="Enter your message"></textarea>
+				<span id="message-invalid" style="display:none">Incorrect message length (15-10000 characters expected)</span>
 			</div>
 
 			<button onclick="sendMessage(); return false;" class="btn btn-dark">

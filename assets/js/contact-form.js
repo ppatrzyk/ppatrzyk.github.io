@@ -9,43 +9,47 @@ function validEmail(email) {
   }
 
  function sendMessage() {
-    var sns = new AWS.SNS();
-
+    var invalidEmail = document.getElementById("email-invalid");
+    var invalidMessage = document.getElementById("message-invalid");
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
 
-    if( email == '' || !validEmail(email) ) {
-        var invalidEmail = document.getElementById("email-invalid");
-        if (invalidEmail) {
-            invalidEmail.style.display = "block";
-            return false;
-        }
+    var block = false;
+    if ( email == '' || !validEmail(email) ) {
+        invalidEmail.style.display = "block";
+        block = true;
+    } else {
+        invalidEmail.style.display = "none";
+    }
+    if ( message.length < 15 || message.length > 10000 ) {
+        invalidMessage.style.display = "block";
+        block = true;
+    } else {
+        invalidMessage.style.display = "none";
+    }
+    if ( block ) {
+        return false;
     }
 
     var composed_message = `Email: ${email}\n\n${message}`
     var mail_subject = `Contact form: ${email}`
-
     var params = {
         Message: composed_message, 
         Subject: mail_subject,
         TopicArn: 'arn:aws:sns:eu-west-1:410627534876:patrzyk-me-contact'
     };
-
+    
+    var sns = new AWS.SNS();
     sns.publish(params, function(err, data) {
-        if (err) console.log(err, err.stack);
-        else     console.log(data);
+        if (err) {
+            console.log(err, err.stack);
+            alert('Unknown error, sending failed');
+        } else {
+            // console.log(data);
+            document.getElementById("contact_form").style.display = "none";
+            var thankYouMessage = document.getElementById("thankyou_message");
+            thankYouMessage.style.display = "block";
+        }
     });
-
-    // TODO: hide only when sns pub successsfull, error otherwise
-    // invalid email red ?
-    // error when empty message
-    // subject honeypot ?
-
-    document.getElementById("contact_form").style.display = "none";
-    var thankYouMessage = document.getElementById("thankyou_message");
-    if (thankYouMessage) {
-        thankYouMessage.style.display = "block";
-    }
-
     return true;
 };
