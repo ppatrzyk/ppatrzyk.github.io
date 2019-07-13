@@ -84,6 +84,10 @@ img {
   margin-bottom: 8px;
 }
 
+.form-name {
+  display: none;
+}
+
 /* https://github.com/FortAwesome/Font-Awesome/issues/4363#issuecomment-356445786 */
 .fa-font:before {
   font-family: roboto;

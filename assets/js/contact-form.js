@@ -6,13 +6,19 @@ AWS.config.credentials = new AWS.CognitoIdentityCredentials({
 function validEmail(email) {
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
     return re.test(email);
-  }
+}
 
  function sendMessage() {
     var invalidEmail = document.getElementById("email-invalid");
     var invalidMessage = document.getElementById("message-invalid");
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
+
+    // name input set for bot detection
+    var hpot = document.getElementById("name").value;
+    if (hpot.length > 0) {
+        return false
+    }
 
     var block = false;
     if ( email == '' || !validEmail(email) ) {
