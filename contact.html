@@ -8,7 +8,7 @@ add_js: '<script src="/assets/js/aws-sdk.min.js"></script><script src="/assets/j
 <div class="row">
 	<div class="col-md-6 offset-md-3">
 
-		<form id="contact_form">
+		<form id="contact_form" style="display:none">
 
 			<div>
 				<h2>Contact me:</h2>
@@ -31,7 +31,7 @@ add_js: '<script src="/assets/js/aws-sdk.min.js"></script><script src="/assets/j
 				<span id="message-invalid" class="error" style="display:none">Incorrect message length</span>
 			</div>
 
-			<button onclick="sendMessage(); return false;" class="btn btn-dark">
+			<button id="form-button" onclick="sendMessage(); return false;" class="btn btn-dark">
 				Send
 			</button>
 
@@ -39,6 +39,22 @@ add_js: '<script src="/assets/js/aws-sdk.min.js"></script><script src="/assets/j
 
 		<div style="display:none;" id="thankyou_message">
 			<h2>Thanks for your message!</h2>
+		</div>
+
+		<div id="no-js-error">
+			<p>
+				You are blocking javascript. Unfortunately, this form needs it to work. 
+				If you do not wish to enable it, send me an email to <em>piotr at &lt;this domain&gt;</em>.
+			</p>
+		</div>
+
+		<div id="referer-error" style="display:none;">
+			<h2 class="error">Error!</h2>
+			<p>
+				Sending message failed. 
+				Either there is a problem on my side or your browser is spoofing referer. 
+				Try using a different one or send me an email to <em>piotr at &lt;this domain&gt;</em>.
+			</p>
 		</div>
 
 	</div>
