@@ -24,9 +24,8 @@ html, body {
   border-radius: 50%;
   font-size: small;
   text-align: center;
+  cursor: pointer;
 }
-
-/* $('body').removeClass().addClass('light-theme'); */
 
 .navfix {
   margin-top: 60px;
