@@ -44,8 +44,12 @@ h3 {
   font-style: italic;
 }
 
-hr {
+.dark-theme hr {
 	border-top: 1px solid #e6e3ed;
+}
+
+.light-theme hr {
+	border-top: 1px solid #070707;
 }
 
 img {
