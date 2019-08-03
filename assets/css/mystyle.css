@@ -15,6 +15,17 @@ html, body {
   color: #070707;
 }
 
+#mode-circle {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: small;
+  text-align: center;
+}
+
 /* $('body').removeClass().addClass('light-theme'); */
 
 .navfix {
