@@ -38,7 +38,7 @@ function setDark() {
 
 function mode() {
     var mode = getCookie('mode');
-    if (typeof mode == 'undefined' || mode == 'dark') {
+    if (typeof(mode) === 'undefined' || mode == 'dark') {
         setLight();
         setCookie("mode", 'light', 999);
     } else {
