@@ -37,8 +37,9 @@ function setDark() {
 }
 
 function mode() {
+    // this is run on click
     var mode = getCookie('mode');
-    if (typeof(mode) === 'undefined' || mode == 'dark') {
+    if (typeof(mode) == null || mode == 'dark') {
         setLight();
         setCookie("mode", 'light', 999);
     } else {
@@ -48,6 +49,7 @@ function mode() {
 }
 
 function checkMode() {
+    // this is run on page ready
     var mode = getCookie('mode');
     if (mode == 'light') {
         setLight();
