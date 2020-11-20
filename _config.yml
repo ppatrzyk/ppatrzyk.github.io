@@ -1,3 +1,4 @@
 url: https://www.patrzyk.me
 author: Piotr Patrzyk
 permalink: /blog/:title
+exclude: ['README.md', 'rm_html_ext.sh']
