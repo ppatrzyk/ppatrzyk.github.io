@@ -13,11 +13,11 @@ html, body {
 
 a {
 	color: #808080;
+  text-decoration: none !important;
 }
 
 a:hover {
   color: #404040;
-  text-decoration: none !important;
 }
 
 h3 {
@@ -55,14 +55,6 @@ img {
   display: flex;
   align-items: center;
   padding-bottom: 30px;
-}
-
-/* https://github.com/FortAwesome/Font-Awesome/issues/4363#issuecomment-356445786 */
-.fa-font:before {
-  font-family: roboto;
-  /* color: #429bf4; */
-  font-size: 1.2em;
-  content: "k";
 }
 
 /* lato-regular - latin-ext */
