@@ -76,3 +76,8 @@ img {
        url('/assets/fonts/lato-v15-latin-ext-italic.woff2') format('woff2'), 
        url('/assets/fonts/lato-v15-latin-ext-italic.woff') format('woff');
 }
+
+.icon {
+  height: 16px;
+  filter: invert(100%) brightness(70%);
+}
