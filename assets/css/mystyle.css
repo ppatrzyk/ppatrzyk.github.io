@@ -1,4 +1,32 @@
+:root {
+  --background-color: #070707;
+  --font-color: #FAFAFA;
+  --global-font-size: 16px
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.terminal-nav {
+  padding-bottom: 50px;
+}
+.terminal-menu li {
+  margin-right: 1em;
+}
 .icon {
   height: 16px;
   filter: invert(100%) brightness(70%);
 }
+.grid {
+  display: grid;
+  align-items: center;
+  grid-gap: 1em;
+  grid-template-rows: auto;
+  grid-template-columns: repeat( auto-fit, minmax(calc(var(--page-width) / 12), 1fr) );
+}
+/* .main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+} */
