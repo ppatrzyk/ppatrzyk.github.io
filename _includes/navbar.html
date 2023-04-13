@@ -1,59 +1,47 @@
-<nav class="navbar navbar-expand-md fixed-top navbar-dark">
-
-  <a class="navbar-brand" href="/">{{ site.author }}</a>
-
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#subpages" aria-controls="subpages" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="navbar-collapse collapse" id="subpages">
-
+<nav>
+  <a href="/">{{ site.author }}</a>
+  <div>
     <!-- Left side of navbar -->
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <ul>
       {% assign psize = site.posts | size %}
       {% if psize != 0 %}
-      <li class="nav-item">
-        <a class="nav-link" href="/blog">Blog</a>
+      <li>
+        <a href="/blog">Blog</a>
       </li>
       {% endif %}
     </ul>
-
     <!-- Right side of navbar -->
-    <ul class="navbar-nav">
-      
-      <li class="nav-item">
-        <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/piotr-patrzyk/">
+    <ul>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/piotr-patrzyk/">
           <img class="icon" src="data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtbmFtZT0iTGF5ZXIgMSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjAuNDcsMkgzLjUzQTEuNDUsMS40NSwwLDAsMCwyLjA2LDMuNDNWMjAuNTdBMS40NSwxLjQ1LDAsMCwwLDMuNTMsMjJIMjAuNDdhMS40NSwxLjQ1LDAsMCwwLDEuNDctMS40M1YzLjQzQTEuNDUsMS40NSwwLDAsMCwyMC40NywyWk04LjA5LDE4Ljc0aC0zdi05aDNaTTYuNTksOC40OGgwYTEuNTYsMS41NiwwLDEsMSwwLTMuMTIsMS41NywxLjU3LDAsMSwxLDAsMy4xMlpNMTguOTEsMTguNzRoLTNWMTMuOTFjMC0xLjIxLS40My0yLTEuNTItMkExLjY1LDEuNjUsMCwwLDAsMTIuODUsMTNhMiwyLDAsMCwwLS4xLjczdjVoLTNzMC04LjE4LDAtOWgzVjExQTMsMywwLDAsMSwxNS40Niw5LjVjMiwwLDMuNDUsMS4yOSwzLjQ1LDQuMDZaIi8+PC9zdmc+" alt="">
-          <span class="d-md-none">LinkedIn</span>
+          <span>LinkedIn</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/ppatrzyk">
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/ppatrzyk">
           <img class="icon" src="data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTEyIC4xNGMtNi42MTcgMC0xMiA1LjM4My0xMiAxMiAwIDUuNTc2IDMuOTUgMTAuNSA5LjM5MiAxMS43MDhBLjUuNSAwIDAgMCAxMCAyMy4zNnYtMi43MmEuNS41IDAgMCAwLS41LS41aC0xYy0xLjI0OCAwLTIuMDk3LTEuMTgzLTIuODQ3LTIuMjI2LS4wNzctLjEwNy0uMTUzLS4yMTQtLjIzLS4zMTguMzU1LjE4OC42Ni40MTUuOTYxLjYzOC41OTkuNDQ0IDEuMjE5LjkwMyAyLjA0My45MDNoLjAxYy4wNjQuMDA3LjY0OC4wNjcgMS4xLS4zMy4yMTItLjE4Ny40NjMtLjU0LjQ2My0xLjE2N3YtLjM0OWEuNDk5LjQ5OSAwIDAgMC0uMzY0LS40ODFDNi44NjMgMTYuMDI1IDUgMTMuOTQ3IDUgMTEuNjRjMC0xLjIuNDkzLTIuMzQ1IDEuNDI1LTMuMzEyYS41LjUgMCAwIDAgLjA5NC0uNTU4Yy0uMzcyLS44MDItLjI5My0xLjg5My4xNDgtMi41NDguNTg0LjIyNyAxLjM0MS43MDQgMS44MzMgMS4yODhhLjUuNSAwIDAgMCAuNTU0LjE0NyA4LjY3IDguNjcgMCAwIDEgNS44OTMgMCAuNS41IDAgMCAwIC41NTQtLjE0N2MuNDkyLS41ODQgMS4yNDktMS4wNjEgMS44MzItMS4yODkuNDQyLjY1NS41MjEgMS43NDcuMTQ4IDIuNTQ5YS41LjUgMCAwIDAgLjA5NC41NThDMTguNTA3IDkuMjk1IDE5IDEwLjQ0IDE5IDExLjY0YzAgMi40MjItMi4wNyA0LjU5MS01LjAzMyA1LjI3NGEuNS41IDAgMCAwLS4zMjkuNzJjLjI0Ny40Ny4zNjIgMS4xMDcuMzYyIDIuMDA2djMuNzJhLjUuNSAwIDAgMCAuNjA4LjQ4OEMyMC4wNSAyMi42NCAyNCAxNy43MTYgMjQgMTIuMTRjMC02LjYxNy01LjM4My0xMi0xMi0xMnoiLz48L3N2Zz4=" alt="">
-          <span class="d-md-none">GitHub</span>
+          <span>GitHub</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.kaggle.com/pieca111">
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.kaggle.com/pieca111">
           <img class="icon" src="data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik03Ljk5OCwwSDUuNTk4QzUuMzY1LDAsNS4yNSwwLjExOCw1LjI1LDAuMzUydjIzLjI5NWMwLDAuMjM1LDAuMTE1LDAuMzUyLDAuMzQ4LDAuMzUyaDIuNDAxYzAuMjMyLDAsMC4zNDktMC4xMTcsMC4zNDktMC4zNTJ2LTUuMTFsMS40MjctMS4zNzRsNS4xMTUsNi41OUMxNS4wMjcsMjMuOTE4LDE1LjE4OSwyNCwxNS4zNzUsMjRoMy4wOTdjMC4xNjIsMCwwLjI1NS0wLjA0NywwLjI3OC0wLjE0MWwtMC4wNy0wLjM1M2wtNi43NDktOC40OTRsNi40NzEtNi4zNDNjMC4xMjEtMC4xMjQsMC4wNzgtMC40OTMtMC4yNDQtMC40OTNoLTMuMjAxYy0wLjE2MiwwLTAuMzI0LDAuMDgzLTAuNDg3LDAuMjQ3bC02LjEyMyw2LjI3M1YwLjM1MkM4LjM0NywwLjExOCw4LjIzLDAsNy45OTgsMHoiLz48L3N2Zz4=" alt="">
-          <span class="d-md-none">Kaggle</span>
+          <span>Kaggle</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/5550835?tab=profile">
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/5550835?tab=profile">
           <img class="icon" src="data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik02LjQ0NCAxNC44MzlsMTAuMzM4IDIuMTk2LjQzMy0yLjA4OS0xMC4zMzgtMi4yMTJ6TTYuMjE1IDE3LjU3MWgxMC41NjZ2Mi4xMjdoLTEwLjU2NnpNNy44IDkuODMxbDkuNTcyIDQuNTI2Ljg4Ny0xLjk0NC05LjU3Ny00LjUzOHpNMTcuMzczIDE0LjM1OGwtLjAwMS0uMDAxLS4wMDEuMDAxeiIvPjxwYXRoIGQ9Ik0yIDE1LjQyOXY4LjU3MWgxOC45OTJ2LTguNTcxaC0yLjExM3Y2LjQyOGgtMTQuNzY2di02LjQyOHpNMTAuNDUzIDUuMDYzbDguMTA5IDYuODczIDEuMzQ2LTEuNjUtOC4xMDktNi44NzN6TTIyIDguNTg3bC02LjMwMi04LjU4Ny0xLjY5MSAxLjI4NiA2LjMwMiA4LjU4N3oiLz48L3N2Zz4=" alt="">
-          <span class="d-md-none">StackOverflow</span>
+          <span>StackOverflow</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://orcid.org/0000-0001-9629-1145">
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0000-0001-9629-1145">
           <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0ndXRmLTgnPz48IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAtLT48c3ZnIHZlcnNpb249JzEuMScgaWQ9J0xheWVyXzEnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZycgeG1sbnM6eGxpbms9J2h0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsnIHg9JzBweCcgeT0nMHB4JyB2aWV3Qm94PScwIDAgMjU2IDI1Nicgc3R5bGU9J2VuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjU2IDI1NjsnIHhtbDpzcGFjZT0ncHJlc2VydmUnPjxzdHlsZSB0eXBlPSd0ZXh0L2Nzcyc+IC5zdDB7ZmlsbDojMDAwMDAwO30gLnN0MXtmaWxsOiNGRkZGRkY7fQo8L3N0eWxlPjxwYXRoIGNsYXNzPSdzdDAnIGQ9J00yNTYsMTI4YzAsNzAuNy01Ny4zLDEyOC0xMjgsMTI4QzU3LjMsMjU2LDAsMTk4LjcsMCwxMjhDMCw1Ny4zLDU3LjMsMCwxMjgsMEMxOTguNywwLDI1Niw1Ny4zLDI1NiwxMjh6Jy8+PGc+PHBhdGggY2xhc3M9J3N0MScgZD0nTTg2LjMsMTg2LjJINzAuOVY3OS4xaDE1LjR2NDguNFYxODYuMnonLz48cGF0aCBjbGFzcz0nc3QxJyBkPSdNMTA4LjksNzkuMWg0MS42YzM5LjYsMCw1NywyOC4zLDU3LDUzLjZjMCwyNy41LTIxLjUsNTMuNi01Ni44LDUzLjZoLTQxLjhWNzkuMXogTTEyNC4zLDE3Mi40aDI0LjUgYzM0LjksMCw0Mi45LTI2LjUsNDIuOS0zOS43YzAtMjEuNS0xMy43LTM5LjctNDMuNy0zOS43aC0yMy43VjE3Mi40eicvPjxwYXRoIGNsYXNzPSdzdDEnIGQ9J004OC43LDU2LjhjMCw1LjUtNC41LDEwLjEtMTAuMSwxMC4xYy01LjYsMC0xMC4xLTQuNi0xMC4xLTEwLjFjMC01LjYsNC41LTEwLjEsMTAuMS0xMC4xIEM4NC4yLDQ2LjcsODguNyw1MS4zLDg4LjcsNTYuOHonLz48L2c+PC9zdmc+" alt="">
-          <span class="d-md-none">ORCID</span>
+          <span>ORCID</span>
         </a>
       </li>
-
     </ul>
-
   </div>
-
 </nav>
