@@ -4,29 +4,20 @@ permalink: /blog
 title: Blog
 ---
 
-<div>
-	<div>
-		<h2>Blog</h2>
-		<hr>
-		<br>
-	</div>
-</div>
-
-{% assign psize = site.posts | size %}
-{% if psize != 0 %}
-	{% for post in site.posts %}
-	<div>
+<section>
+	<h2>Blog</h2>
+	<hr>
+	{% assign psize = site.posts | size %}
+	{% if psize != 0 %}
+		{% for post in site.posts %}
 		<div>
 			<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
 			<p>{{ post.date | date: "%Y-%m-%d" }}</p>
 		</div>
-	</div>
-	{% endfor %}
-{% else %}
-	<div>
+		{% endfor %}
+	{% else %}
 		<div>
 			<h4>In construction...</h4>
 		</div>
-	</div>
-	
-{% endif %}
+	{% endif %}
+</section>
