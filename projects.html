@@ -1,0 +1,30 @@
+---
+layout: default
+permalink: /projects
+title: Projects
+---
+
+{% assign sections = "packages,apps,data_pipelines,other" | split: "," %}
+
+{% for section in sections %}
+<section>
+    <header><h2>{{ site.data.projects[section].label }}</h2></header>
+    <div class="terminal-timeline">
+        {% for entry in site.data.projects[section].entries %}
+        <div class="terminal-card">
+            <header>{{ entry.name }}</header>
+            <div>
+                <p>
+                    <span>{{ entry.year }}</span> | 
+                    {% if entry.applink != null %}
+                    <a target="_blank" rel="noopener noreferrer" href="{{ entry.applink }}">App</a> | 
+                    {% endif %}
+                    <a target="_blank" rel="noopener noreferrer" href="{{ entry.gitlink }}">Source Code</a>
+                </p>
+                <p>{{ entry.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endfor %}

@@ -1,0 +1,135 @@
+{
+    "packages": {
+        "label": "Packages",
+        "entries": [
+            {
+                "name": "merkury",
+                "year": "2022-",
+                "applink": "https://pypi.org/project/merkury/",
+                "gitlink": "https://github.com/ppatrzyk/merkury",
+                "description": "Python package to generate HTML reports from .py scripts"
+            },
+            {
+                "name": "Filmweb export",
+                "year": "2020-",
+                "applink": "https://pypi.org/project/filmweb/",
+                "gitlink": "https://github.com/ppatrzyk/filmweb-export",
+                "description": "Python package to export data from Filmweb movie database"
+            },
+            {
+                "name": "Heatmap",
+                "year": "2022",
+                "gitlink": "https://github.com/ppatrzyk/heatmap",
+                "description": "Rust package to display CSV as a heatmap in terminal"
+            },
+            {
+                "name": "lastfmR",
+                "year": "2017-2019",
+                "gitlink": "https://github.com/ppatrzyk/lastfmR",
+                "description": "R package wrapping <a target='_blank' rel='noopener noreferrer' href='https://www.last.fm/'>Last.fm</a> API."
+            }
+        ]
+    },
+    "apps": {
+        "label": "Apps and Sites",
+        "entries": [
+            {
+                "name": "Gitbi",
+                "year": "2023-",
+                "gitlink": "https://github.com/ppatrzyk/gitbi",
+                "description": " Lightweight BI app based on git repo"
+            },
+            {
+                "name": "Photo gallery",
+                "year": "2023-",
+                "applink": "https://foto.patrzyk.me/",
+                "gitlink": "https://github.com/ppatrzyk/foto",
+                "description": "Static photo gallery"
+            },
+            {
+                "name": "Minesweeper",
+                "year": "2021",
+                "gitlink": "https://github.com/ppatrzyk/elixir-minesweeper",
+                "description": "Minesweeper clone in Elixir (Scenic)"
+            },
+            {
+                "name": "Foreign tourists",
+                "year": "2020",
+                "applink": "https://ppatrzyk.github.io/foreign-tourists/",
+                "gitlink": "https://github.com/ppatrzyk/foreign-tourists",
+                "description": "Data visualization built with Svelte and d3"
+            },
+            {
+                "name": "Modular Shiny Template",
+                "year": 2019,
+                "gitlink": "https://github.com/ppatrzyk/modular-shiny-template",
+                "description": "Template app including modularized Shiny code"
+            },
+            {
+                "name": "Personal page",
+                "year": "2018-",
+                "applink": "https://www.patrzyk.me/",
+                "gitlink": "https://github.com/ppatrzyk/ppatrzyk.github.io",
+                "description": "This page"
+            }
+        ]
+    },
+    "data_pipelines": {
+        "label": "Data pipelines",
+        "entries": [
+            {
+                "name": "Wiki Events",
+                "year": "2024",
+                "gitlink": "https://github.com/ppatrzyk/wiki-events",
+                "description": "System for collecting and displaying Wikipedia event streaming data"
+            },
+            {
+                "name": "Forecast monitor",
+                "year": "2022",
+                "gitlink": "https://github.com/ppatrzyk/forecast-monitor",
+                "description": "System for collecting and aggregating multiple weather forecasts"
+            },
+            {
+                "name": "Stream transport",
+                "year": "2022",
+                "gitlink": "https://github.com/ppatrzyk/stream-transport",
+                "description": "System for data collection built with Benthos, Rabbit and Elixir Broadway"
+            }
+        ]
+    },
+    "other": {
+        "label": "Other",
+        "entries": [
+            {
+                "name": "Kaggle",
+                "year": "2019-",
+                "gitlink": "https://github.com/ppatrzyk/kaggle",
+                "description": "Various explorations published on kaggle"
+            },
+            {
+                "name": "Project Euler",
+                "year": "2019-",
+                "gitlink": "https://github.com/ppatrzyk/project-euler-python",
+                "description": "My Project Euler solutions in Python"
+            },
+            {
+                "name": "Polska GeoJSON",
+                "year": "2019",
+                "gitlink": "https://github.com/ppatrzyk/polska-geojson",
+                "description": "Maps of Poland in GeoJSON format"
+            },
+            {
+                "name": "Agent-based models",
+                "year": "2015-2017",
+                "gitlink": "https://github.com/ppatrzyk/agent-based-models",
+                "description": "Agent-based models developed in Netlogo"
+            },
+            {
+                "name": "UniWien-LaTeX-Thesis",
+                "year": "2016",
+                "gitlink": "https://github.com/ppatrzyk/UniWien-LaTeX-Thesis",
+                "description": "Template for Masters Thesis in Latex"
+            }
+        ]
+    }
+}
