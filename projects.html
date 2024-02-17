@@ -7,24 +7,26 @@ title: Projects
 {% assign sections = "packages,apps,data_pipelines,other" | split: "," %}
 
 {% for section in sections %}
-<section>
-    <header><h2>{{ site.data.projects[section].label }}</h2></header>
+<section class="projects-section">
+    <header><h1>{{ site.data.projects[section].label }}</h1></header>
     <div class="terminal-timeline">
         {% for entry in site.data.projects[section].entries %}
         <div class="terminal-card">
-            <header>{{ entry.name }}</header>
             <div>
+                <header><h2>{{ entry.name }}</h2></header>
                 <p>
                     <span>{{ entry.year }}</span> | 
                     {% if entry.applink != null %}
-                    <a target="_blank" rel="noopener noreferrer" href="{{ entry.applink }}">App</a> | 
+                    <a target="_blank" rel="noopener noreferrer" href="{{ entry.applink }}">web</a> | 
                     {% endif %}
-                    <a target="_blank" rel="noopener noreferrer" href="{{ entry.gitlink }}">Source Code</a>
+                    <a target="_blank" rel="noopener noreferrer" href="{{ entry.gitlink }}">source</a>
                 </p>
                 <p>{{ entry.description }}</p>
             </div>
         </div>
         {% endfor %}
     </div>
+    <hr>
 </section>
+
 {% endfor %}
