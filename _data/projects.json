@@ -1,6 +1,6 @@
 {
-    "packages": {
-        "label": "Packages",
+    "tools": {
+        "label": "Packages and command line tools",
         "entries": [
             {
                 "name": "merkury",
@@ -14,7 +14,7 @@
                 "year": "2020-",
                 "applink": "https://pypi.org/project/filmweb/",
                 "gitlink": "https://github.com/ppatrzyk/filmweb-export",
-                "description": "Python package for exporting data from <em>Filmweb</em> movie database."
+                "description": "Python package for exporting data from <em>Filmweb.pl</em> movie database."
             },
             {
                 "name": "heatmap",
@@ -31,33 +31,43 @@
         ]
     },
     "apps": {
-        "label": "Apps and Websites",
+        "label": "Applications and games",
         "entries": [
-            {
-                "name": "Languages of the Internet",
-                "year": "2024",
-                "applink": "https://ppatrzyk.github.io/common-crawl/",
-                "gitlink": "https://github.com/ppatrzyk/common-crawl",
-                "description": "Common crawl data processing with python/SQL and visualization with plotly.js."
-            },
             {
                 "name": "Gitbi",
                 "year": "2023-",
                 "gitlink": "https://github.com/ppatrzyk/gitbi",
-                "description": "Lightweight BI web app based on git repo. Written in Python."
+                "description": "Lightweight BI web app using git repo to store queries. Written in Python (Starlette)."
             },
             {
-                "name": "foto",
-                "year": "2023-",
-                "applink": "https://foto.patrzyk.me/",
-                "gitlink": "https://github.com/ppatrzyk/foto",
-                "description": "Static photo gallery."
+                "name": "comments-api",
+                "year": "2024",
+                "gitlink": "https://github.com/ppatrzyk/comments-api",
+                "description": "API for adding comments on static sites. Written in Java (Spring Boot)."
             },
             {
                 "name": "Minesweeper",
                 "year": "2021",
                 "gitlink": "https://github.com/ppatrzyk/elixir-minesweeper",
                 "description": "Minesweeper clone in Elixir (Scenic)."
+            }
+        ]
+    },
+    "viz": {
+        "label": "Data visualizations",
+        "entries": [
+            {
+                "name": "Kaggle",
+                "year": "2019-",
+                "gitlink": "https://github.com/ppatrzyk/kaggle",
+                "description": "Various explorations published on kaggle."
+            },
+            {
+                "name": "Languages of the Internet",
+                "year": "2024",
+                "applink": "https://ppatrzyk.github.io/common-crawl/",
+                "gitlink": "https://github.com/ppatrzyk/common-crawl",
+                "description": "<em>Common crawl</em> data processing with python/SQL and visualization with plotly.js."
             },
             {
                 "name": "Foreign tourists",
@@ -65,19 +75,6 @@
                 "applink": "https://ppatrzyk.github.io/foreign-tourists/",
                 "gitlink": "https://github.com/ppatrzyk/foreign-tourists",
                 "description": "Data visualization built with Svelte and d3."
-            },
-            {
-                "name": "Modular Shiny Template",
-                "year": 2019,
-                "gitlink": "https://github.com/ppatrzyk/modular-shiny-template",
-                "description": "Template app including modularized Shiny code."
-            },
-            {
-                "name": "Personal page",
-                "year": "2018-",
-                "applink": "https://www.patrzyk.me/",
-                "gitlink": "https://github.com/ppatrzyk/ppatrzyk.github.io",
-                "description": "This website."
             }
         ]
     },
@@ -88,19 +85,19 @@
                 "name": "Wiki Events",
                 "year": "2024",
                 "gitlink": "https://github.com/ppatrzyk/wiki-events",
-                "description": "System for collecting and displaying Wikipedia event streaming data."
+                "description": "System for collecting and displaying <em>Wikipedia</em> event streaming data."
             },
             {
                 "name": "Forecast monitor",
                 "year": "2022",
                 "gitlink": "https://github.com/ppatrzyk/forecast-monitor",
-                "description": "System for collecting and aggregating multiple weather forecasts."
+                "description": "System for weather forecast data collection and transformation from HTTP API."
             },
             {
                 "name": "Stream transport",
                 "year": "2022",
                 "gitlink": "https://github.com/ppatrzyk/stream-transport",
-                "description": "System for data collection built with Benthos, Rabbit and Elixir Broadway."
+                "description": "System for public transportation data collection from HTTP API."
             }
         ]
     },
@@ -108,10 +105,11 @@
         "label": "Other",
         "entries": [
             {
-                "name": "Kaggle",
-                "year": "2019-",
-                "gitlink": "https://github.com/ppatrzyk/kaggle",
-                "description": "Various explorations published on kaggle."
+                "name": "foto",
+                "year": "2023-",
+                "applink": "https://foto.patrzyk.me/",
+                "gitlink": "https://github.com/ppatrzyk/foto",
+                "description": "Static photo gallery."
             },
             {
                 "name": "Project Euler",
@@ -124,6 +122,12 @@
                 "year": "2019",
                 "gitlink": "https://github.com/ppatrzyk/polska-geojson",
                 "description": "Maps of Poland in GeoJSON format."
+            },
+            {
+                "name": "Modular Shiny Template",
+                "year": 2019,
+                "gitlink": "https://github.com/ppatrzyk/modular-shiny-template",
+                "description": "Template app including modularized Shiny code."
             },
             {
                 "name": "Agent-based models",
