@@ -40,6 +40,13 @@
                 "description": "Lightweight BI web app using git repo to store queries. Written in Python (Starlette)."
             },
             {
+                "name": "Snake",
+                "year": "2024",
+                "applink": "https://ppatrzyk.github.io/snake-ts/",
+                "gitlink": "https://github.com/ppatrzyk/snake-ts",
+                "description": "Snake game clone written in Typescript (Phaser.js)."
+            },
+            {
                 "name": "comments-api",
                 "year": "2024",
                 "gitlink": "https://github.com/ppatrzyk/comments-api",
@@ -82,22 +89,28 @@
         "label": "Data pipelines",
         "entries": [
             {
+                "name": "Change detector",
+                "year": "2024",
+                "gitlink": "https://github.com/ppatrzyk/change-detector",
+                "description": "System for observing stream of text content and detecting changes. Tools used: Java/Flink, RabbitMQ, Python."
+            },
+            {
                 "name": "Wiki Events",
                 "year": "2024",
                 "gitlink": "https://github.com/ppatrzyk/wiki-events",
-                "description": "System for collecting and displaying <em>Wikipedia</em> event streaming data."
+                "description": "System for collecting and displaying <em>Wikipedia</em> event streaming data. Tools used: Python/Dash, RabbitMQ, Clickhouse, dbt"
             },
             {
                 "name": "Forecast monitor",
                 "year": "2022",
                 "gitlink": "https://github.com/ppatrzyk/forecast-monitor",
-                "description": "System for weather forecast data collection and transformation from HTTP API."
+                "description": "System for weather forecast data collection and transformation. Tools used: Rust, Kafka, PostgreSQL, PostgREST, Benthos"
             },
             {
                 "name": "Stream transport",
                 "year": "2022",
                 "gitlink": "https://github.com/ppatrzyk/stream-transport",
-                "description": "System for public transportation data collection from HTTP API."
+                "description": "System for public transportation data collection. Tools used: Elixir/Broadway, Benthos, SQLite"
             }
         ]
     },
