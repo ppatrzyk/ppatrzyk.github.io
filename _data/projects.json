@@ -89,6 +89,12 @@
         "label": "Data pipelines",
         "entries": [
             {
+                "name": "RSS store",
+                "year": "2024",
+                "gitlink": "https://github.com/ppatrzyk/rss-store",
+                "description": "System for collecting data from rss streams and training/deploying ML classification over it. Tools used: Python (Prefect, MLflow), PostgreSQL."
+            },
+            {
                 "name": "Change detector",
                 "year": "2024",
                 "gitlink": "https://github.com/ppatrzyk/change-detector",
@@ -138,7 +144,7 @@
             },
             {
                 "name": "Modular Shiny Template",
-                "year": 2019,
+                "year": "2019",
                 "gitlink": "https://github.com/ppatrzyk/modular-shiny-template",
                 "description": "Template app including modularized Shiny code."
             },
