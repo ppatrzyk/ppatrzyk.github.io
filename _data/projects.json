@@ -40,6 +40,12 @@
                 "description": "Lightweight BI web app using git repo to store queries. Written in Python (Starlette)."
             },
             {
+                "name": "free-domain-checker",
+                "year": "2024",
+                "gitlink": "https://github.com/ppatrzyk/free-domain-checker",
+                "description": "SvelteKit app that generates free domain names."
+            },
+            {
                 "name": "Snake",
                 "year": "2024",
                 "applink": "https://ppatrzyk.github.io/snake-ts/",
