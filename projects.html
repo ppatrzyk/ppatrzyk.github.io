@@ -6,14 +6,28 @@ title: Projects
 
 {% assign sections = "tools,apps,data_pipelines,viz,other" | split: "," %}
 
+<h1>Projects</h1>
+<nav>
+    <ul>
+    {% for section in sections %}
+        <li><a href="#{{ section }}">{{ site.data.projects[section].label }}</a></li>
+    {% endfor %}
+    </ul>
+</nav>
+
 {% for section in sections %}
-<section class="projects-section">
+<section id="{{ section }}" class="projects-section">
     <header><h1>{{ site.data.projects[section].label }}</h1></header>
     <div class="terminal-timeline">
         {% for entry in site.data.projects[section].entries %}
         <div class="terminal-card">
             <div>
-                <header><h2>{{ entry.name }}</h2></header>
+                {% if entry.applink != null %}
+                    {% assign mainlink = entry.applink %}
+                {% else %}
+                    {% assign mainlink = entry.gitlink %}
+                {% endif %}
+                <header><a target="_blank" rel="noopener noreferrer" href="{{ mainlink }}"><h2 class="project-entry-name">{{ entry.name }}</h2></a></header>
                 <p>
                     <span>{{ entry.year }}</span> | 
                     {% if entry.applink != null %}

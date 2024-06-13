@@ -72,6 +72,7 @@
             {
                 "name": "Kaggle",
                 "year": "2019-",
+                "applink": "https://www.kaggle.com/pieca111",
                 "gitlink": "https://github.com/ppatrzyk/kaggle",
                 "description": "Various explorations published on kaggle."
             },
@@ -110,19 +111,19 @@
                 "name": "Wiki Events",
                 "year": "2024",
                 "gitlink": "https://github.com/ppatrzyk/wiki-events",
-                "description": "System for collecting and displaying <em>Wikipedia</em> event streaming data. Tools used: Python/Dash, RabbitMQ, Clickhouse, dbt"
+                "description": "System for collecting and displaying <em>Wikipedia</em> event streaming data. Tools used: Python/Dash, RabbitMQ, Clickhouse, dbt."
             },
             {
                 "name": "Forecast monitor",
                 "year": "2022",
                 "gitlink": "https://github.com/ppatrzyk/forecast-monitor",
-                "description": "System for weather forecast data collection and transformation. Tools used: Rust, Kafka, PostgreSQL, PostgREST, Benthos"
+                "description": "System for weather forecast data collection and transformation. Tools used: Rust, Kafka, PostgreSQL, PostgREST, Benthos."
             },
             {
                 "name": "Stream transport",
                 "year": "2022",
                 "gitlink": "https://github.com/ppatrzyk/stream-transport",
-                "description": "System for public transportation data collection. Tools used: Elixir/Broadway, Benthos, SQLite"
+                "description": "System for public transportation data collection. Tools used: Elixir/Broadway, Benthos, SQLite."
             }
         ]
     },

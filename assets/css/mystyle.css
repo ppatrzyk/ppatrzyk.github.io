@@ -17,7 +17,7 @@
 }
 .icon {
   height: 16px;
-  filter: invert(100%) brightness(70%);
+  filter: invert(100%) grayscale(100%) brightness(70%);
 }
 .grid {
   display: grid;
@@ -33,6 +33,9 @@
 }
 .projects-section {
   margin-bottom: 2em;
+}
+.project-entry-name {
+  white-space: nowrap;
 }
 @media only screen and (max-width: 480px) {
   .hide-small {
