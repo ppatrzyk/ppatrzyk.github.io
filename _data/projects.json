@@ -77,6 +77,13 @@
                 "description": "Various explorations published on kaggle."
             },
             {
+                "name": "Polish baby names 2000-2023",
+                "year": "2024",
+                "applink": "https://ppatrzyk.github.io/baby-names/",
+                "gitlink": "https://github.com/ppatrzyk/baby-names",
+                "description": "Open data processing with SQL (Duckdb) and visualization with Svelte/Typescript (echarts)."
+            },
+            {
                 "name": "Languages of the Internet",
                 "year": "2024",
                 "applink": "https://ppatrzyk.github.io/common-crawl/",
