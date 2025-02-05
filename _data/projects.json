@@ -34,16 +34,16 @@
         "label": "Applications and games",
         "entries": [
             {
+                "name": "arq-http",
+                "year": "2025",
+                "gitlink": "https://github.com/ppatrzyk/arq-http",
+                "description": "Dashboard and HTTP api for arq job queue. Written in Python (Starlette)."
+            },
+            {
                 "name": "Gitbi",
                 "year": "2023-",
                 "gitlink": "https://github.com/ppatrzyk/gitbi",
                 "description": "Lightweight BI web app using git repo to store queries. Written in Python (Starlette)."
-            },
-            {
-                "name": "free-domain-checker",
-                "year": "2024",
-                "gitlink": "https://github.com/ppatrzyk/free-domain-checker",
-                "description": "SvelteKit app that generates free domain names."
             },
             {
                 "name": "Snake",
@@ -51,12 +51,6 @@
                 "applink": "https://ppatrzyk.github.io/snake-ts/",
                 "gitlink": "https://github.com/ppatrzyk/snake-ts",
                 "description": "Snake game clone written in Typescript (Phaser.js)."
-            },
-            {
-                "name": "comments-api",
-                "year": "2024",
-                "gitlink": "https://github.com/ppatrzyk/comments-api",
-                "description": "API for adding comments on static sites. Written in Java (Spring Boot)."
             },
             {
                 "name": "Minesweeper",
